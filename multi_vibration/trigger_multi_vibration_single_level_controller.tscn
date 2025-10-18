@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://6lfe22mnjnhf"]
+
+[ext_resource type="Script" uid="uid://qj4bkj5kxn5i" path="res://multi_vibration/trigger_multi_vibration_single_level_controller.gd" id="1_1r45n"]
+
+[node name="TriggerMultiVibrationSingleLevelController" type="HBoxContainer" unique_id=1911947284]
+size_flags_vertical = 3
+script = ExtResource("1_1r45n")
+
+[node name="AmplitudeController" type="HBoxContainer" parent="." unique_id=1944382387]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="AmplitudeLabel" type="Label" parent="AmplitudeController" unique_id=1053416861]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Amp: XX%"
+
+[node name="AmplitudeSlider" type="HSlider" parent="AmplitudeController" unique_id=178918915]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 8.0

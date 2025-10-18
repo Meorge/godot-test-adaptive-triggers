@@ -1,0 +1,102 @@
+[gd_scene load_steps=3 format=3 uid="uid://ceuw3e1cnlgq6"]
+
+[ext_resource type="Script" uid="uid://boep2nbkfds4f" path="res://feedback/trigger_feedback_controller.gd" id="1_so0lb"]
+[ext_resource type="PackedScene" uid="uid://5we5r5fpbe30" path="res://off/joy_adaptive_triggers_off_button.tscn" id="2_6m1ve"]
+
+[node name="TriggerFeedbackController" type="VBoxContainer" unique_id=74080968]
+offset_left = 67.0
+offset_top = 26.0
+offset_right = 502.0
+offset_bottom = 487.0
+script = ExtResource("1_so0lb")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=342456870]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Trigger" type="VSlider" parent="HBoxContainer" unique_id=2097040369]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+editable = false
+scrollable = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=918215879]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Level9" type="HSlider" parent="HBoxContainer/VBoxContainer" unique_id=1258930710]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 2
+max_value = 8.0
+tick_count = 8
+
+[node name="Level8" type="HSlider" parent="HBoxContainer/VBoxContainer" unique_id=726159622]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 2
+max_value = 8.0
+tick_count = 8
+
+[node name="Level7" type="HSlider" parent="HBoxContainer/VBoxContainer" unique_id=714379186]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 2
+max_value = 8.0
+tick_count = 8
+
+[node name="Level6" type="HSlider" parent="HBoxContainer/VBoxContainer" unique_id=188140884]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 2
+max_value = 8.0
+tick_count = 8
+
+[node name="Level5" type="HSlider" parent="HBoxContainer/VBoxContainer" unique_id=568062417]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 2
+max_value = 8.0
+tick_count = 8
+
+[node name="Level4" type="HSlider" parent="HBoxContainer/VBoxContainer" unique_id=1550396558]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 2
+max_value = 8.0
+tick_count = 8
+
+[node name="Level3" type="HSlider" parent="HBoxContainer/VBoxContainer" unique_id=22016237]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 2
+max_value = 8.0
+tick_count = 8
+
+[node name="Level2" type="HSlider" parent="HBoxContainer/VBoxContainer" unique_id=9338765]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 2
+max_value = 8.0
+tick_count = 8
+
+[node name="Level1" type="HSlider" parent="HBoxContainer/VBoxContainer" unique_id=1103469664]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 2
+max_value = 8.0
+tick_count = 8
+
+[node name="Level0" type="HSlider" parent="HBoxContainer/VBoxContainer" unique_id=1504637994]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 2
+max_value = 8.0
+tick_count = 8
+
+[node name="OffButton" parent="." unique_id=157513025 instance=ExtResource("2_6m1ve")]
+unique_name_in_owner = true
+layout_mode = 2

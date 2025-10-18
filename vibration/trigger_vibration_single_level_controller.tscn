@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://brv4xx16k6qle"]
+
+[ext_resource type="Script" uid="uid://b4765s0fw6nvq" path="res://vibration/trigger_vibration_single_level_controller.gd" id="1_ktpc4"]
+
+[node name="TriggerVibrationSingleLevelController" type="HBoxContainer" unique_id=1911947284]
+size_flags_vertical = 3
+script = ExtResource("1_ktpc4")
+
+[node name="AmplitudeController" type="HBoxContainer" parent="." unique_id=1944382387]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="AmplitudeLabel" type="Label" parent="AmplitudeController" unique_id=1053416861]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Amp: XX%"
+
+[node name="AmplitudeSlider" type="HSlider" parent="AmplitudeController" unique_id=178918915]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 8.0
+
+[node name="FreqController" type="HBoxContainer" parent="." unique_id=697914526]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="FreqLabel" type="Label" parent="FreqController" unique_id=2008774465]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Amp: XX%"
+
+[node name="FreqSlider" type="HSlider" parent="FreqController" unique_id=601667254]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0

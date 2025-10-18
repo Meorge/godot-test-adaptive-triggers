@@ -1,0 +1,108 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbq5q6e4b2w7r"]
+
+[ext_resource type="PackedScene" uid="uid://5we5r5fpbe30" path="res://off/joy_adaptive_triggers_off_button.tscn" id="1_8dx7s"]
+[ext_resource type="Script" uid="uid://b7am7g5ibbpky" path="res://slope_feedback/trigger_slope_feedback_controller.gd" id="1_hbk0c"]
+
+[node name="TriggerSlopeFeedbackController" type="VBoxContainer" unique_id=113771986]
+size_flags_horizontal = 3
+script = ExtResource("1_hbk0c")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=750349256]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="TriggerControls" type="VBoxContainer" parent="HBoxContainer" unique_id=1471965465]
+layout_mode = 2
+
+[node name="Trigger" type="VSlider" parent="HBoxContainer/TriggerControls" unique_id=1525052099]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+size_flags_horizontal = 1
+size_flags_vertical = 3
+max_value = 1.0
+step = 0.01
+editable = false
+scrollable = false
+
+[node name="CurrLabel" type="Label" parent="HBoxContainer/TriggerControls" unique_id=253048798]
+unique_name_in_owner = true
+layout_mode = 2
+text = "0"
+horizontal_alignment = 1
+
+[node name="StartControls" type="VBoxContainer" parent="HBoxContainer" unique_id=2144412820]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+
+[node name="StartSlider" type="VSlider" parent="HBoxContainer/StartControls" unique_id=1724820818]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 1
+size_flags_vertical = 3
+max_value = 9.0
+
+[node name="StartLabel" type="Label" parent="HBoxContainer/StartControls" unique_id=703989862]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Start: 0"
+horizontal_alignment = 1
+
+[node name="EndControls" type="VBoxContainer" parent="HBoxContainer" unique_id=2116238304]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+
+[node name="EndSlider" type="VSlider" parent="HBoxContainer/EndControls" unique_id=355238591]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 1
+size_flags_vertical = 3
+max_value = 9.0
+
+[node name="EndLabel" type="Label" parent="HBoxContainer/EndControls" unique_id=657174919]
+unique_name_in_owner = true
+layout_mode = 2
+text = "End: 0"
+horizontal_alignment = 1
+
+[node name="StrengthControls" type="VBoxContainer" parent="HBoxContainer" unique_id=1956462832]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="StartStrengthControls" type="HBoxContainer" parent="HBoxContainer/StrengthControls" unique_id=1558531160]
+layout_mode = 2
+
+[node name="StartStrengthLabel" type="Label" parent="HBoxContainer/StrengthControls/StartStrengthControls" unique_id=1453270176]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+text = "Start strength: 0"
+
+[node name="StartStrengthSlider" type="HSlider" parent="HBoxContainer/StrengthControls/StartStrengthControls" unique_id=2004288645]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 1.0
+max_value = 8.0
+value = 1.0
+
+[node name="EndStrengthControls" type="HBoxContainer" parent="HBoxContainer/StrengthControls" unique_id=102408393]
+layout_mode = 2
+
+[node name="EndStrengthLabel" type="Label" parent="HBoxContainer/StrengthControls/EndStrengthControls" unique_id=158386098]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+text = "End strength: 0"
+
+[node name="EndStrengthSlider" type="HSlider" parent="HBoxContainer/StrengthControls/EndStrengthControls" unique_id=697171885]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 1.0
+max_value = 8.0
+value = 1.0
+
+[node name="OffButton" parent="." unique_id=157513025 instance=ExtResource("1_8dx7s")]
+unique_name_in_owner = true
+layout_mode = 2

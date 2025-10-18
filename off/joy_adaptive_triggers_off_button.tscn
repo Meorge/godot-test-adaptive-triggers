@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://5we5r5fpbe30"]
+
+[ext_resource type="Script" uid="uid://bs6qtkkri0gle" path="res://off/joy_adaptive_triggers_off_button.gd" id="1_v551t"]
+
+[node name="JoyAdaptiveTriggersOffButton" type="Button" unique_id=157513025]
+text = "Reset Trigger"
+script = ExtResource("1_v551t")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

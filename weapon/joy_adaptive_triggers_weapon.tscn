@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3 uid="uid://dy6h77lr8sxvk"]
+
+[ext_resource type="PackedScene" uid="uid://cs3vcwabb3rxv" path="res://weapon/trigger_weapon_controller.tscn" id="1_bokle"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_nduq5"]
+font_size = 40
+
+[node name="JoyAdaptiveTriggersWeapon" type="Control" unique_id=541055579]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1728827113]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1326965692]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer" unique_id=816453536]
+layout_mode = 2
+text = "Input.joy_adaptive_triggers_weapon"
+label_settings = SubResource("LabelSettings_nduq5")
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=2126003087]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 100
+
+[node name="LeftTriggerWeaponController" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=113771986 instance=ExtResource("1_bokle")]
+layout_mode = 2
+
+[node name="RightTriggerWeaponController" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=142697024 instance=ExtResource("1_bokle")]
+layout_mode = 2
+trigger = "Right Trigger"
